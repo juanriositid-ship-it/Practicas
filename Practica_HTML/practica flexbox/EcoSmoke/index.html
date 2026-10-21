@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EcoSmoke | Tecnología para un aire más limpio</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    
+    <header class="encabezado">
+        <a href="#inicio" class="logo">
+            🌿 EcoSmoke
+        </a>
+
+        <nav class="menu">
+            <a href="#inicio">Inicio</a>
+            <a href="#proyecto">Proyecto</a>
+            <a href="#funcionamiento">Funcionamiento</a>
+            <a href="#beneficios">Beneficios</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+
+    <section id="inicio" class="portada">
+        <div class="portada-contenido">
+            <p class="etiqueta">TECNOLOGÍA + MEDIO AMBIENTE</p>
+
+            <h1>Un futuro con aire más limpio</h1>
+
+            <p>
+                EcoSmoke es un proyecto tecnológico enfocado en
+                medir el dióxido de carbono (CO₂) generado por
+                los automóviles y promover una mayor conciencia ambiental.
+            </p>
+
+            <div class="botones">
+                <a href="#proyecto" class="boton principal">
+                    Conoce el proyecto
+                </a>
+
+                <a href="#funcionamiento" class="boton secundario">
+                    ¿Cómo funciona?
+                </a>
+            </div>
+        </div>
+
+        <div class="portada-imagen">
+            <img 
+                src="./img/prototipo.jpg"
+                alt="Logotipo de EcoSmoke"
+                class="imagen-prototipo"
+            >   
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="proyecto" class="seccion">
+        <p class="etiqueta">NUESTRO PROYECTO</p>
+        <h2>¿Qué es EcoSmoke?</h2>
+
+        <p class="descripcion">
+            EcoSmoke es una propuesta que busca utilizar sensores
+            para obtener información sobre el CO₂ relacionado con
+            las emisiones de los vehículos. Su finalidad es ayudar
+            a comprender el impacto ambiental del transporte y
+            fomentar prácticas más responsables.
+        </p>
+
+        <div class="tarjetas">
+            <article class="tarjeta">
+                <span class="icono">🔬</span>
+                <h3>Medición</h3>
+                <p>
+                    Obtener datos mediante un sensor adecuado
+                    para medir CO₂.
+                </p>
+            </article>
+
+            <article class="tarjeta">
+                <span class="icono">🚗</span>
+                <h3>Automóviles</h3>
+                <p>
+                    Estudiar las emisiones relacionadas con
+                    el uso de vehículos.
+                </p>
+            </article>
+
+            <article class="tarjeta">
+                <span class="icono">🌱</span>
+                <h3>Conciencia ambiental</h3>
+                <p>
+                    Promover el cuidado del aire y del medio ambiente.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    
+    <section id="funcionamiento" class="seccion seccion-verde">
+        <p class="etiqueta">¿CÓMO FUNCIONA?</p>
+        <h2>Las etapas de EcoSmoke</h2>
+
+        <div class="pasos">
+            <div class="paso">
+                <span>01</span>
+                <h3>Detección</h3>
+                <p>El sensor adecuado detecta el CO₂ en la muestra de aire.</p>
+            </div>
+
+            <div class="paso">
+                <span>02</span>
+                <h3>Procesamiento</h3>
+                <p>El sistema recibe y procesa la información obtenida.</p>
+            </div>
+
+            <div class="paso">
+                <span>03</span>
+                <h3>Visualización</h3>
+                <p>Los datos se muestran para facilitar su interpretación.</p>
+            </div>
+        </div>
+
+        <p class="nota">
+            Estas etapas representan el funcionamiento previsto.
+            La medición real depende del sensor, el circuito y el
+            programa implementados en el prototipo.
+        </p>
+    </section>
+
+    <section id="beneficios" class="seccion">
+        <p class="etiqueta">NUESTRO PROPÓSITO</p>
+        <h2>¿Qué queremos lograr?</h2>
+
+        <div class="tarjetas">
+            <article class="tarjeta">
+                <span class="icono">💨</span>
+                <h3>Conocer el aire</h3>
+                <p>Facilitar información sobre la concentración de CO₂ medida.</p>
+            </article>
+
+            <article class="tarjeta">
+                <span class="icono">💡</span>
+                <h3>Crear conciencia</h3>
+                <p>Explicar la importancia de comprender las emisiones vehiculares.</p>
+            </article>
+
+            <article class="tarjeta">
+                <span class="icono">♻️</span>
+                <h3>Innovar</h3>
+                <p>Integrar tecnología y educación ambiental en un mismo proyecto.</p>
+            </article>
+        </div>
+    </section>
+
+   
+    <section class="seccion demostracion">
+        <p class="etiqueta">DEMO DE LA PÁGINA</p>
+        <h2>Explora una lectura de ejemplo</h2>
+
+        <p class="descripcion">
+            Pulsa el botón para visualizar un valor ilustrativo.
+            No es una medición real del automóvil.
+        </p>
+
+        <div class="lectura">
+            <span>CO₂ de ejemplo</span>
+            <strong id="valor-co2">---</strong>
+            <span>ppm (partes por millón)</span>
+            <p id="estado">Esperando interacción...</p>
+
+            <button id="boton-medicion" class="boton principal">
+                Mostrar lectura de ejemplo
+            </button>
+        </div>
+    </section>
+
+    
+    <section id="contacto" class="seccion contacto">
+        <p class="etiqueta">PROYECTO INTEGRADOR</p>
+        <h2>Conoce más sobre EcoSmoke</h2>
+
+        <p>
+            Un proyecto que une tecnología, innovación y
+            conciencia ambiental para estudiar las emisiones
+            de los automóviles.
+        </p>
+
+        <a href="#inicio" class="boton principal">
+            Volver al inicio ↑
+        </a>
+    </section>
+
+   
+    <footer>
+        <p>© 2026 EcoSmoke | Proyecto integrador</p>
+        <p>Tecnología al servicio del medio ambiente 🌿</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

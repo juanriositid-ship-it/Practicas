@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+
+    <style>
+        /* Estilos generales de la página */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Contenedor del formulario */
+        form {
+            background-color: white;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #5b58a8;
+            margin-bottom: 25px;
+        }
+
+        /* Etiquetas */
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #7d58a8;
+        }
+
+        /* Campos de texto y número */
+        input {
+            width: 100%;
+            padding: 10px 12px;
+            margin-bottom: 18px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #db3434;
+        }
+
+        /* Botón */
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #83c6c7;
+            color: purple;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #63146e;
+        }
+
+        /* Resultado */
+        #resultado {
+            margin-top: 20px;
+            padding: 12px;
+            background-color: #53a32e;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            color: #f2c761;
+            min-height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form id="miFormulario">
+        <h1>Formulario</h1>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" required>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <p id="resultado"></p>
+
+    <script>
+        const formulario = document.getElementById("miFormulario");
+
+        formulario.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const nombre = document.getElementById("nombre").value;
+            const edad = document.getElementById("edad").value;
+
+            console.log(nombre + " " + edad);
+            document.getElementById("resultado").textContent = 
+                "Hola " + nombre + ", tienes " + edad + " años";
+        });
+    </script>
+</body>
+</html>

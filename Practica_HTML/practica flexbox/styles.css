@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+.caja-a{
+    width: 200px;
+    background-color: lightblue;
+    padding: 20px;
+    border: 5 px solid navy;
+    margin: 30px;
+}
+
+.caja-b{
+    width: 200px;
+    background-color: lightcoral;
+    border: 5px solid darkred;
+    border-top: 5px solid blueviolet;
+    border-bottom: 10px solid blue;
+    margin: 0px 0px 0px 100px;
+}
+.contenedor{
+    border: 3px solid purple;
+    padding: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+
+    justify-content: space-around;
+}
+.item{
+    background-color: darkblue;
+    color: beige;
+    padding: 24px;
+    margin: 5px;
+    font-size: 20px;
+}
